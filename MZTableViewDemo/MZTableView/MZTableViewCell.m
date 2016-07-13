@@ -12,9 +12,8 @@
 
 @implementation MZTableViewCell
 
--(id)init
-{
-    self = [super init];
+-(id)init {
+    self           = [super init];
     self.transform = CGAffineTransformMakeScale(1, 1);
     return self;
 }
@@ -29,8 +28,7 @@
     // Configure the view for the selected state
 }
 
-- (void)transformCell:(float) scale
-{
+- (void)transformCell:(float) scale {
     self.transform = CGAffineTransformMakeScale(scale, scale);
 }
 

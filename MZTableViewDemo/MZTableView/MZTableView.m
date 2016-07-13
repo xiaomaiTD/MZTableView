@@ -13,7 +13,7 @@
 
 @implementation MZTableView
 
--(void)layoutSubviews{
+-(void)layoutSubviews {
     [super layoutSubviews];
     
     /**

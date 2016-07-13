@@ -26,8 +26,8 @@
                                                                              [UIScreen mainScreen].bounds.size.width,
                                                                              [UIScreen mainScreen].bounds.size.height - 20)
                                                             style:UITableViewStylePlain];
-    mzTableView.minScale = .7;
-    mzTableView.delegate = self;
+    mzTableView.minScale   = .7;
+    mzTableView.delegate   = self;
     mzTableView.dataSource = self;
     
     [self.view addSubview:mzTableView];
@@ -47,12 +47,14 @@
     return [UIScreen mainScreen].bounds.size.width * 9 / 16;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MZTableViewCell *cell = [[MZTableViewCell alloc] init];
-    UIImageView *img = [[UIImageView alloc] init];
-    img.frame = CGRectMake(10, 10, [UIScreen mainScreen].bounds.size.width - 20, [UIScreen mainScreen].bounds.size.width * 9 / 16 - 20);
-    img.image = [UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg", (int)indexPath.row]];
+    UIImageView *img      = [[UIImageView alloc] init];
+    img.frame             = CGRectMake(10,
+                                       10,
+                                       [UIScreen mainScreen].bounds.size.width - 20,
+                                       [UIScreen mainScreen].bounds.size.width * 9 / 16 - 20);
+    img.image             = [UIImage imageNamed:[NSString stringWithFormat:@"%d.jpg", (int)indexPath.row]];
     [cell addSubview:img];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;

@@ -16,6 +16,6 @@
  *
  *  @param scale 缩放比例
  */
-- (void)transformCell:(float) scale;
+- (void)transformCell:(float)scale;
 
 @end
