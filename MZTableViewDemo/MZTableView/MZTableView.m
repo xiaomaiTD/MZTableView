@@ -19,10 +19,8 @@
     /**
      *  遍历页面上显示的所有cell
      */
-    for(NSIndexPath *indexPath in self.indexPathsForVisibleRows)
-    {
+    for(NSIndexPath *indexPath in self.indexPathsForVisibleRows) {
         UITableViewCell *cell = [self cellForRowAtIndexPath:indexPath];
-        
         if([NSStringFromClass(cell.class) isEqualToString:@"MZTableViewCell"]){
             MZTableViewCell *tmpCell = (MZTableViewCell *)cell;
             double scale =  1;
@@ -48,7 +46,6 @@
              */
             if(originY <= 0){
                 scale = 1 - fabs(originY) / cellHeight * (1 - _minScale);
-                
             }
             /**
              *  最后一个cell
