@@ -21,10 +21,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MZTableView *mzTableView = [[MZTableView alloc] initWithFrame:CGRectMake(0,
-                                                                             20,
-                                                                             [UIScreen mainScreen].bounds.size.width,
-                                                                             [UIScreen mainScreen].bounds.size.height - 20)
+    CGRect tableViewFrame = CGRectMake(0,
+                              20,
+                              [UIScreen mainScreen].bounds.size.width,
+                              [UIScreen mainScreen].bounds.size.height - 20);
+    MZTableView *mzTableView = [[MZTableView alloc] initWithFrame:tableViewFrame
                                                             style:UITableViewStylePlain];
     mzTableView.minScale   = .7;
     mzTableView.delegate   = self;
@@ -43,7 +44,7 @@
     return 10;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    //因为示例图片的长宽比是 16:9 ,所以cell的比例也是 16:9
+    // 因为示例图片的长宽比是 16:9 ,所以cell的比例也是 16:9
     return [UIScreen mainScreen].bounds.size.width * 9 / 16;
 }
 
