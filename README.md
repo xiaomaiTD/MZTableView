@@ -1,7 +1,7 @@
 # MZTableView
 记得star一下哦
 ------------
-类似 Storehouse (不过最近好像下架了) 首页Cell的视觉差效果
+类似 Storehouse 首页Cell的视觉差效果
 参考了swift版的实现方式，用OC实现的。
 ##使用
 `UITableView`需要继承`MZTableView`
@@ -16,7 +16,7 @@
 
 联系我  : 479003573@qq.com 
 
-github :Andyjicw
+github : Andyjicw
 
 =======================
 ## 须知       
