@@ -3,7 +3,9 @@
 ------------
 类似 Storehouse 首页Cell的视觉差效果
 参考了swift版的实现方式，用OC实现的。
+
 ##使用
+
 `UITableView`需要继承`MZTableView`
 `UITableViewCell`需要继承`MZTableViewCell`
 设置`UITableView`的`minScale` (cell的最小缩放比例，数值在 0 - 1 之间，默认为 0)
